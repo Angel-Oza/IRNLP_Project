@@ -1,0 +1,434 @@
+{
+  "Clean (Nominal)": {
+    "SensorOnlyNet": {
+      "accuracy": 0.990909090909091,
+      "macro_precision": 0.9917355371900828,
+      "macro_recall": 0.9909090909090907,
+      "macro_f1": 0.9908863066757803,
+      "log_loss": 0.049505647975383094,
+      "mean_gate_weight": null,
+      "rri": 1.0,
+      "f1_degradation": 0.0
+    },
+    "SimpleFusionNet": {
+      "accuracy": 0.9977272727272727,
+      "macro_precision": 0.9978354978354979,
+      "macro_recall": 0.9977272727272727,
+      "macro_f1": 0.997725851384388,
+      "log_loss": 0.024047210767899056,
+      "mean_gate_weight": null,
+      "rri": 1.0,
+      "f1_degradation": 0.0
+    },
+    "GatedFusionNet": {
+      "accuracy": 0.9977272727272727,
+      "macro_precision": 0.9978354978354979,
+      "macro_recall": 0.9977272727272727,
+      "macro_f1": 0.997725851384388,
+      "log_loss": 0.036881320381634886,
+      "mean_gate_weight": 0.7038508057594299,
+      "rri": 1.0,
+      "f1_degradation": 0.0
+    },
+    "ReliabilityGatedFusionNet": {
+      "accuracy": 0.9954545454545455,
+      "macro_precision": 0.9958677685950413,
+      "macro_recall": 0.9954545454545454,
+      "macro_f1": 0.9954431533378901,
+      "log_loss": 0.0765965655055558,
+      "mean_gate_weight": 0.6072908639907837,
+      "rri": 1.0,
+      "f1_degradation": 0.0
+    },
+    "RandomForest": {
+      "accuracy": 0.9954545454545455,
+      "macro_precision": 0.9956709956709957,
+      "macro_recall": 0.9954545454545454,
+      "macro_f1": 0.9954517027687758,
+      "log_loss": 0.056436627678857286,
+      "mean_gate_weight": null,
+      "rri": 1.0,
+      "f1_degradation": 0.0
+    },
+    "MLP": {
+      "accuracy": 0.9727272727272728,
+      "macro_precision": 0.9737128634257821,
+      "macro_recall": 0.9727272727272727,
+      "macro_f1": 0.9726305572903776,
+      "log_loss": 0.11149658254175815,
+      "mean_gate_weight": null,
+      "rri": 1.0,
+      "f1_degradation": 0.0
+    },
+    "LogisticRegression": {
+      "accuracy": 0.9727272727272728,
+      "macro_precision": 0.9740217299040829,
+      "macro_recall": 0.9727272727272727,
+      "macro_f1": 0.9724640256149183,
+      "log_loss": 0.19982578913224852,
+      "mean_gate_weight": null,
+      "rri": 1.0,
+      "f1_degradation": 0.0
+    }
+  },
+  "Gaussian Noise 5%": {
+    "SensorOnlyNet": {
+      "accuracy": 0.9863636363636363,
+      "macro_precision": 0.9874065328610783,
+      "macro_recall": 0.9863636363636363,
+      "macro_f1": 0.9863380094445563,
+      "log_loss": 0.05526186004958666,
+      "mean_gate_weight": null,
+      "rri": 0.9954098697291694,
+      "f1_degradation": 0.004548297231223963
+    },
+    "SimpleFusionNet": {
+      "accuracy": 0.990909090909091,
+      "macro_precision": 0.9911141490088858,
+      "macro_recall": 0.9909090909090907,
+      "macro_f1": 0.9909034055375519,
+      "log_loss": 0.02631883274462253,
+      "mean_gate_weight": null,
+      "rri": 0.9931620035329648,
+      "f1_degradation": 0.0068224458468361115
+    },
+    "GatedFusionNet": {
+      "accuracy": 0.9931818181818182,
+      "macro_precision": 0.9937032664305392,
+      "macro_recall": 0.993181818181818,
+      "macro_f1": 0.9931690047222781,
+      "log_loss": 0.04213756461792471,
+      "mean_gate_weight": 0.7037986516952515,
+      "rri": 0.9954327667707646,
+      "f1_degradation": 0.00455684666210987
+    },
+    "ReliabilityGatedFusionNet": {
+      "accuracy": 0.9886363636363636,
+      "macro_precision": 0.9893742621015349,
+      "macro_recall": 0.9886363636363634,
+      "macro_f1": 0.9885593653244488,
+      "log_loss": 0.08006038544070104,
+      "mean_gate_weight": 0.6070888042449951,
+      "rri": 0.9930847000249499,
+      "f1_degradation": 0.006883788013441361
+    },
+    "RandomForest": {
+      "accuracy": 0.9863636363636363,
+      "macro_precision": 0.9875049193231011,
+      "macro_recall": 0.9863636363636363,
+      "macro_f1": 0.9863199978732712,
+      "log_loss": 0.12610880347522926,
+      "mean_gate_weight": null,
+      "rri": 0.9908265716256194,
+      "f1_degradation": 0.009131704895504633
+    },
+    "MLP": {
+      "accuracy": 0.9704545454545455,
+      "macro_precision": 0.9717493028188826,
+      "macro_recall": 0.9704545454545453,
+      "macro_f1": 0.9703177535528194,
+      "log_loss": 0.11714475959771443,
+      "mean_gate_weight": null,
+      "rri": 0.9976221148716513,
+      "f1_degradation": 0.0023128037375582666
+    },
+    "LogisticRegression": {
+      "accuracy": 0.9704545454545455,
+      "macro_precision": 0.9718819106590004,
+      "macro_recall": 0.9704545454545453,
+      "macro_f1": 0.9702526405087962,
+      "log_loss": 0.20389819753894,
+      "mean_gate_weight": null,
+      "rri": 0.9977259980339903,
+      "f1_degradation": 0.0022113851061220657
+    }
+  },
+  "Gaussian Noise 10%": {
+    "SensorOnlyNet": {
+      "accuracy": 0.9727272727272728,
+      "macro_precision": 0.9743998425816609,
+      "macro_recall": 0.9727272727272726,
+      "macro_f1": 0.9726260688391624,
+      "log_loss": 0.0788418074444645,
+      "mean_gate_weight": null,
+      "rri": 0.9815718133214725,
+      "f1_degradation": 0.0182602378366179
+    },
+    "SimpleFusionNet": {
+      "accuracy": 0.990909090909091,
+      "macro_precision": 0.9910173160173159,
+      "macro_recall": 0.9909090909090907,
+      "macro_f1": 0.9909076695662061,
+      "log_loss": 0.043254336885896943,
+      "mean_gate_weight": null,
+      "rri": 0.9931662772807567,
+      "f1_degradation": 0.006818181818181834
+    },
+    "GatedFusionNet": {
+      "accuracy": 0.9863636363636363,
+      "macro_precision": 0.9864490772385508,
+      "macro_recall": 0.9863636363636362,
+      "macro_f1": 0.9862996759338223,
+      "log_loss": 0.06128011530111508,
+      "mean_gate_weight": 0.7036819458007812,
+      "rri": 0.9885477805003134,
+      "f1_degradation": 0.011426175450565679
+    },
+    "ReliabilityGatedFusionNet": {
+      "accuracy": 0.9840909090909091,
+      "macro_precision": 0.9847091903311999,
+      "macro_recall": 0.984090909090909,
+      "macro_f1": 0.9840738316027147,
+      "log_loss": 0.095363547819422,
+      "mean_gate_weight": 0.6065160632133484,
+      "rri": 0.9885786328460322,
+      "f1_degradation": 0.011369321735175464
+    },
+    "RandomForest": {
+      "accuracy": 0.9681818181818181,
+      "macro_precision": 0.9701692247146793,
+      "macro_recall": 0.968181818181818,
+      "macro_f1": 0.968144955885649,
+      "log_loss": 0.22773833918057718,
+      "mean_gate_weight": null,
+      "rri": 0.9725684864396985,
+      "f1_degradation": 0.027306746883126842
+    },
+    "MLP": {
+      "accuracy": 0.9727272727272728,
+      "macro_precision": 0.9747524803744899,
+      "macro_recall": 0.9727272727272727,
+      "macro_f1": 0.9725629355020182,
+      "log_loss": 0.1357603518782967,
+      "mean_gate_weight": null,
+      "rri": 0.9999304753610171,
+      "f1_degradation": 6.762178835939547e-05
+    },
+    "LogisticRegression": {
+      "accuracy": 0.9772727272727273,
+      "macro_precision": 0.9787114845938376,
+      "macro_recall": 0.9772727272727273,
+      "macro_f1": 0.9771305187281378,
+      "log_loss": 0.2189491783151094,
+      "mean_gate_weight": null,
+      "rri": 1.00479862801122,
+      "f1_degradation": -0.004666493113219539
+    }
+  },
+  "Gaussian Noise 20%": {
+    "SensorOnlyNet": {
+      "accuracy": 0.925,
+      "macro_precision": 0.9270311023590555,
+      "macro_recall": 0.925,
+      "macro_f1": 0.9248111206906025,
+      "log_loss": 0.20947325296037778,
+      "mean_gate_weight": null,
+      "rri": 0.9333170863902172,
+      "f1_degradation": 0.06607518598517781
+    },
+    "SimpleFusionNet": {
+      "accuracy": 0.9477272727272728,
+      "macro_precision": 0.9483713156859089,
+      "macro_recall": 0.9477272727272726,
+      "macro_f1": 0.9472216807582662,
+      "log_loss": 0.15748842683706185,
+      "mean_gate_weight": null,
+      "rri": 0.9493807135937742,
+      "f1_degradation": 0.05050417062612178
+    },
+    "GatedFusionNet": {
+      "accuracy": 0.9454545454545454,
+      "macro_precision": 0.9459481733827354,
+      "macro_recall": 0.9454545454545453,
+      "macro_f1": 0.9449069015500339,
+      "log_loss": 0.15924907720009293,
+      "mean_gate_weight": 0.7031604647636414,
+      "rri": 0.9470606582348593,
+      "f1_degradation": 0.05281894983435409
+    },
+    "ReliabilityGatedFusionNet": {
+      "accuracy": 0.9568181818181818,
+      "macro_precision": 0.9578602863502947,
+      "macro_recall": 0.9568181818181817,
+      "macro_f1": 0.9566985146253439,
+      "log_loss": 0.17322748707648458,
+      "mean_gate_weight": 0.6032477021217346,
+      "rri": 0.9610779997003055,
+      "f1_degradation": 0.03874463871254619
+    },
+    "RandomForest": {
+      "accuracy": 0.8886363636363637,
+      "macro_precision": 0.8944776297137438,
+      "macro_recall": 0.8886363636363636,
+      "macro_f1": 0.886647366194956,
+      "log_loss": 0.5248576166295215,
+      "mean_gate_weight": null,
+      "rri": 0.8906985278429997,
+      "f1_degradation": 0.10880433657381983
+    },
+    "MLP": {
+      "accuracy": 0.9340909090909091,
+      "macro_precision": 0.9354018503153035,
+      "macro_recall": 0.9340909090909093,
+      "macro_f1": 0.933309284400427,
+      "log_loss": 0.21650970972666378,
+      "mean_gate_weight": null,
+      "rri": 0.959572241900877,
+      "f1_degradation": 0.039321272889950576
+    },
+    "LogisticRegression": {
+      "accuracy": 0.9363636363636364,
+      "macro_precision": 0.9381852718393181,
+      "macro_recall": 0.9363636363636364,
+      "macro_f1": 0.935645374070457,
+      "log_loss": 0.2871084872929641,
+      "mean_gate_weight": null,
+      "rri": 0.9621388035190508,
+      "f1_degradation": 0.03681865154446129
+    }
+  },
+  "Sensor Drift (1.5\u03c3)": {
+    "SensorOnlyNet": {
+      "accuracy": 0.45,
+      "macro_precision": 0.7771534539609832,
+      "macro_recall": 0.45,
+      "macro_f1": 0.4653371620077014,
+      "log_loss": 2.730386847624349,
+      "mean_gate_weight": null,
+      "rri": 0.46961710831267,
+      "f1_degradation": 0.5255491446680789
+    },
+    "SimpleFusionNet": {
+      "accuracy": 0.44772727272727275,
+      "macro_precision": 0.8120569455796729,
+      "macro_recall": 0.4477272727272727,
+      "macro_f1": 0.48727735781251413,
+      "log_loss": 2.95679516256109,
+      "mean_gate_weight": null,
+      "rri": 0.4883880247629102,
+      "f1_degradation": 0.5104484935718738
+    },
+    "GatedFusionNet": {
+      "accuracy": 0.4636363636363636,
+      "macro_precision": 0.8187780021810555,
+      "macro_recall": 0.4636363636363635,
+      "macro_f1": 0.5045821894447198,
+      "log_loss": 2.845182332070904,
+      "mean_gate_weight": 0.7081014513969421,
+      "rri": 0.5057322998543037,
+      "f1_degradation": 0.4931436619396682
+    },
+    "ReliabilityGatedFusionNet": {
+      "accuracy": 0.5477272727272727,
+      "macro_precision": 0.7661979504640393,
+      "macro_recall": 0.5477272727272727,
+      "macro_f1": 0.5614676865516454,
+      "log_loss": 1.7969765127811475,
+      "mean_gate_weight": 0.4919498860836029,
+      "rri": 0.5640379208686591,
+      "f1_degradation": 0.43397546678624477
+    },
+    "RandomForest": {
+      "accuracy": 0.3,
+      "macro_precision": 0.646520326960904,
+      "macro_recall": 0.30000000000000004,
+      "macro_f1": 0.31440219457337815,
+      "log_loss": 10.487080821554528,
+      "mean_gate_weight": null,
+      "rri": 0.31583872296254206,
+      "f1_degradation": 0.6810495081953977
+    },
+    "MLP": {
+      "accuracy": 0.44545454545454544,
+      "macro_precision": 0.7942678106351125,
+      "macro_recall": 0.4454545454545454,
+      "macro_f1": 0.46807709039767464,
+      "log_loss": 3.6244767176277106,
+      "mean_gate_weight": null,
+      "rri": 0.48124859628272076,
+      "f1_degradation": 0.504553466892703
+    },
+    "LogisticRegression": {
+      "accuracy": 0.4681818181818182,
+      "macro_precision": 0.8139570687065762,
+      "macro_recall": 0.46818181818181803,
+      "macro_f1": 0.49677967925169003,
+      "log_loss": 3.3148902726239924,
+      "mean_gate_weight": null,
+      "rri": 0.5108463307293668,
+      "f1_degradation": 0.47568434636322826
+    }
+  },
+  "Missing Channels (20%)": {
+    "SensorOnlyNet": {
+      "accuracy": 0.740909090909091,
+      "macro_precision": 0.7670041655042188,
+      "macro_recall": 0.740909090909091,
+      "macro_f1": 0.7447403524198165,
+      "log_loss": 0.8819775438454068,
+      "mean_gate_weight": null,
+      "rri": 0.7515901142263911,
+      "f1_degradation": 0.24614595425596375
+    },
+    "SimpleFusionNet": {
+      "accuracy": 0.8,
+      "macro_precision": 0.824392167730386,
+      "macro_recall": 0.8,
+      "macro_f1": 0.8017892435564821,
+      "log_loss": 0.7834053378362891,
+      "mean_gate_weight": null,
+      "rri": 0.8036167875613974,
+      "f1_degradation": 0.1959366078279059
+    },
+    "GatedFusionNet": {
+      "accuracy": 0.7840909090909091,
+      "macro_precision": 0.8016810206052917,
+      "macro_recall": 0.7840909090909093,
+      "macro_f1": 0.786072153542024,
+      "log_loss": 0.7365010928490485,
+      "mean_gate_weight": 0.7120374441146851,
+      "rri": 0.7878638730782757,
+      "f1_degradation": 0.21165369784236399
+    },
+    "ReliabilityGatedFusionNet": {
+      "accuracy": 0.8022727272727272,
+      "macro_precision": 0.822553418385171,
+      "macro_recall": 0.802272727272727,
+      "macro_f1": 0.8020593056515004,
+      "log_loss": 0.6178737739099811,
+      "mean_gate_weight": 0.4493371844291687,
+      "rri": 0.8057308978037161,
+      "f1_degradation": 0.19338384768638972
+    },
+    "RandomForest": {
+      "accuracy": 0.8090909090909091,
+      "macro_precision": 0.8604523147577513,
+      "macro_recall": 0.809090909090909,
+      "macro_f1": 0.815162222052556,
+      "log_loss": 0.8122654485522689,
+      "mean_gate_weight": null,
+      "rri": 0.8188867624468792,
+      "f1_degradation": 0.18028948071621986
+    },
+    "MLP": {
+      "accuracy": 0.7568181818181818,
+      "macro_precision": 0.7797477028803008,
+      "macro_recall": 0.7568181818181817,
+      "macro_f1": 0.7583730215179323,
+      "log_loss": 0.7734997610306826,
+      "mean_gate_weight": null,
+      "rri": 0.7797133411381408,
+      "f1_degradation": 0.21425753577244533
+    },
+    "LogisticRegression": {
+      "accuracy": 0.7318181818181818,
+      "macro_precision": 0.7646504923837459,
+      "macro_recall": 0.7318181818181819,
+      "macro_f1": 0.7343179028171352,
+      "log_loss": 0.893806294225637,
+      "mean_gate_weight": null,
+      "rri": 0.7551106092102521,
+      "f1_degradation": 0.23814612279778313
+    }
+  }
+}

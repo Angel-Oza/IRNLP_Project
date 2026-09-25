@@ -1,0 +1,46 @@
+# Experiment F: Sensor Fault Robustness & Degradation Benchmark
+
+| Condition              | Model                     | Test Accuracy   |   Macro-F1 | Resilience Index (RRI)   |   F1 Drop (ΔF1) |   Log-Loss | Mean Gate E[g]   |   Mean Reliability r |
+|:-----------------------|:--------------------------|:----------------|-----------:|:-------------------------|----------------:|-----------:|:-----------------|---------------------:|
+| Clean (Nominal)        | SensorOnlyNet             | 99.09%          |     0.9909 | 100.00%                  |          0      |     0.0495 | N/A              |               0.9109 |
+| Clean (Nominal)        | SimpleFusionNet           | 99.77%          |     0.9977 | 100.00%                  |          0      |     0.024  | N/A              |               0.9109 |
+| Clean (Nominal)        | GatedFusionNet            | 99.77%          |     0.9977 | 100.00%                  |          0      |     0.0369 | 0.7039           |               0.9109 |
+| Clean (Nominal)        | ReliabilityGatedFusionNet | 99.55%          |     0.9954 | 100.00%                  |          0      |     0.0766 | 0.6073           |               0.9109 |
+| Clean (Nominal)        | RandomForest              | 99.55%          |     0.9955 | 100.00%                  |          0      |     0.0564 | N/A              |               0.9109 |
+| Clean (Nominal)        | MLP                       | 97.27%          |     0.9726 | 100.00%                  |          0      |     0.1115 | N/A              |               0.9109 |
+| Clean (Nominal)        | LogisticRegression        | 97.27%          |     0.9725 | 100.00%                  |          0      |     0.1998 | N/A              |               0.9109 |
+| Gaussian Noise 5%      | SensorOnlyNet             | 98.64%          |     0.9863 | 99.54%                   |          0.0045 |     0.0553 | N/A              |               0.9104 |
+| Gaussian Noise 5%      | SimpleFusionNet           | 99.09%          |     0.9909 | 99.32%                   |          0.0068 |     0.0263 | N/A              |               0.9104 |
+| Gaussian Noise 5%      | GatedFusionNet            | 99.32%          |     0.9932 | 99.54%                   |          0.0046 |     0.0421 | 0.7038           |               0.9104 |
+| Gaussian Noise 5%      | ReliabilityGatedFusionNet | 98.86%          |     0.9886 | 99.31%                   |          0.0069 |     0.0801 | 0.6071           |               0.9104 |
+| Gaussian Noise 5%      | RandomForest              | 98.64%          |     0.9863 | 99.08%                   |          0.0091 |     0.1261 | N/A              |               0.9104 |
+| Gaussian Noise 5%      | MLP                       | 97.05%          |     0.9703 | 99.76%                   |          0.0023 |     0.1171 | N/A              |               0.9104 |
+| Gaussian Noise 5%      | LogisticRegression        | 97.05%          |     0.9703 | 99.77%                   |          0.0022 |     0.2039 | N/A              |               0.9104 |
+| Gaussian Noise 10%     | SensorOnlyNet             | 97.27%          |     0.9726 | 98.16%                   |          0.0183 |     0.0788 | N/A              |               0.9093 |
+| Gaussian Noise 10%     | SimpleFusionNet           | 99.09%          |     0.9909 | 99.32%                   |          0.0068 |     0.0433 | N/A              |               0.9093 |
+| Gaussian Noise 10%     | GatedFusionNet            | 98.64%          |     0.9863 | 98.85%                   |          0.0114 |     0.0613 | 0.7037           |               0.9093 |
+| Gaussian Noise 10%     | ReliabilityGatedFusionNet | 98.41%          |     0.9841 | 98.86%                   |          0.0114 |     0.0954 | 0.6065           |               0.9093 |
+| Gaussian Noise 10%     | RandomForest              | 96.82%          |     0.9681 | 97.26%                   |          0.0273 |     0.2277 | N/A              |               0.9093 |
+| Gaussian Noise 10%     | MLP                       | 97.27%          |     0.9726 | 99.99%                   |          0.0001 |     0.1358 | N/A              |               0.9093 |
+| Gaussian Noise 10%     | LogisticRegression        | 97.73%          |     0.9771 | 100.48%                  |         -0.0047 |     0.2189 | N/A              |               0.9093 |
+| Gaussian Noise 20%     | SensorOnlyNet             | 92.50%          |     0.9248 | 93.33%                   |          0.0661 |     0.2095 | N/A              |               0.9038 |
+| Gaussian Noise 20%     | SimpleFusionNet           | 94.77%          |     0.9472 | 94.94%                   |          0.0505 |     0.1575 | N/A              |               0.9038 |
+| Gaussian Noise 20%     | GatedFusionNet            | 94.55%          |     0.9449 | 94.71%                   |          0.0528 |     0.1592 | 0.7032           |               0.9038 |
+| Gaussian Noise 20%     | ReliabilityGatedFusionNet | 95.68%          |     0.9567 | 96.11%                   |          0.0387 |     0.1732 | 0.6032           |               0.9038 |
+| Gaussian Noise 20%     | RandomForest              | 88.86%          |     0.8866 | 89.07%                   |          0.1088 |     0.5249 | N/A              |               0.9038 |
+| Gaussian Noise 20%     | MLP                       | 93.41%          |     0.9333 | 95.96%                   |          0.0393 |     0.2165 | N/A              |               0.9038 |
+| Gaussian Noise 20%     | LogisticRegression        | 93.64%          |     0.9356 | 96.21%                   |          0.0368 |     0.2871 | N/A              |               0.9038 |
+| Sensor Drift (1.5σ)    | SensorOnlyNet             | 45.00%          |     0.4653 | 46.96%                   |          0.5255 |     2.7304 | N/A              |               0.7446 |
+| Sensor Drift (1.5σ)    | SimpleFusionNet           | 44.77%          |     0.4873 | 48.84%                   |          0.5104 |     2.9568 | N/A              |               0.7446 |
+| Sensor Drift (1.5σ)    | GatedFusionNet            | 46.36%          |     0.5046 | 50.57%                   |          0.4931 |     2.8452 | 0.7081           |               0.7446 |
+| Sensor Drift (1.5σ)    | ReliabilityGatedFusionNet | 54.77%          |     0.5615 | 56.40%                   |          0.434  |     1.797  | 0.4919           |               0.7446 |
+| Sensor Drift (1.5σ)    | RandomForest              | 30.00%          |     0.3144 | 31.58%                   |          0.681  |    10.4871 | N/A              |               0.7446 |
+| Sensor Drift (1.5σ)    | MLP                       | 44.55%          |     0.4681 | 48.12%                   |          0.5046 |     3.6245 | N/A              |               0.7446 |
+| Sensor Drift (1.5σ)    | LogisticRegression        | 46.82%          |     0.4968 | 51.08%                   |          0.4757 |     3.3149 | N/A              |               0.7446 |
+| Missing Channels (20%) | SensorOnlyNet             | 74.09%          |     0.7447 | 75.16%                   |          0.2461 |     0.882  | N/A              |               0.6677 |
+| Missing Channels (20%) | SimpleFusionNet           | 80.00%          |     0.8018 | 80.36%                   |          0.1959 |     0.7834 | N/A              |               0.6677 |
+| Missing Channels (20%) | GatedFusionNet            | 78.41%          |     0.7861 | 78.79%                   |          0.2117 |     0.7365 | 0.7120           |               0.6677 |
+| Missing Channels (20%) | ReliabilityGatedFusionNet | 80.23%          |     0.8021 | 80.57%                   |          0.1934 |     0.6179 | 0.4493           |               0.6677 |
+| Missing Channels (20%) | RandomForest              | 80.91%          |     0.8152 | 81.89%                   |          0.1803 |     0.8123 | N/A              |               0.6677 |
+| Missing Channels (20%) | MLP                       | 75.68%          |     0.7584 | 77.97%                   |          0.2143 |     0.7735 | N/A              |               0.6677 |
+| Missing Channels (20%) | LogisticRegression        | 73.18%          |     0.7343 | 75.51%                   |          0.2381 |     0.8938 | N/A              |               0.6677 |

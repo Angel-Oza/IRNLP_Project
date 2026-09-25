@@ -1,0 +1,29 @@
+{
+  "total_samples_processed": 257,
+  "total_recommendations_generated": 874,
+  "average_recommendations_per_sample": 3.4,
+  "validated_recommendations_count": 874,
+  "limited_evidence_count": 0,
+  "unsupported_count": 0,
+  "evidence_validated_pass_rate_pct": 100.0,
+  "evidence_supported_rate_pct": 100.0,
+  "total_supporting_evidence_passages_retrieved": 1748,
+  "average_evidence_passages_per_recommendation": 2.0,
+  "urgency_distribution": {
+    "HIGH": 567,
+    "MEDIUM": 195,
+    "LOW": 112
+  },
+  "topic_frequency_breakdown": {
+    "Soil Organic Carbon & Microbiome Restoration": 257,
+    "Primary Nitrogen Nutrient Management": 257,
+    "Phosphorus Fertility & Root Development": 125,
+    "Manganese Micronutrient Nutrition": 109,
+    "Potassium Nutrition & Crop Stalk Strength": 85,
+    "Boron Micronutrient Nutrition": 36,
+    "Zinc Micronutrient Nutrition": 2,
+    "Copper Micronutrient Nutrition": 3
+  },
+  "missing_parameter_cases": 0,
+  "execution_mode": "Deterministic Domain-Grounded Fallback Synthesizer (Zero Fake LLM Claims)"
+}
