@@ -1,0 +1,90 @@
+{
+  "dataset_c_audit": {
+    "dataset_name": "Dataset C (Crop Requirement Benchmark)",
+    "total_rows": 2200,
+    "total_columns": 8,
+    "columns": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall",
+      "label"
+    ],
+    "missing_values": 0,
+    "exact_duplicate_rows": 0,
+    "number_of_classes": 22,
+    "class_balance_status": "PERFECT_BALANCE_100_PER_CLASS",
+    "out_of_bounds_count": {
+      "N": 0,
+      "P": 0,
+      "K": 0,
+      "temperature": 0,
+      "humidity": 0,
+      "ph": 0,
+      "rainfall": 0
+    },
+    "integrity_verdict": "PASSED"
+  },
+  "dataset_a_audit": {
+    "dataset_name": "Dataset A (IVRI Soil Laboratory Chemistry)",
+    "total_rows": 257,
+    "total_columns": 15,
+    "missing_values": 0,
+    "exact_duplicate_rows": 0,
+    "measured_ph_range": [
+      6.76,
+      7.45
+    ],
+    "measured_ec_range_dsm": [
+      0.08,
+      0.27
+    ],
+    "measured_oc_range_percent": [
+      0.11,
+      0.41
+    ],
+    "measured_n_range_kgha": [
+      59.0,
+      179.0
+    ],
+    "integrity_verdict": "PASSED"
+  },
+  "dataset_b_audit": {
+    "dataset_name": "Dataset B (Berambadi In-Situ Telemetry 2016)",
+    "total_records": 35041,
+    "total_columns": 8,
+    "missing_values_by_column": {
+      "timestamp": 0,
+      "Temp_5cm": 3,
+      "SM_5cm": 4,
+      "EC_5cm": 3,
+      "Temp_50cm": 2,
+      "SM_50cm": 4,
+      "EC_50cm": 3,
+      "Precipitation": 0
+    },
+    "missing_rate_percent": 0.006777774606889073,
+    "temperature_range_5cm": [
+      15.0,
+      34.6
+    ],
+    "moisture_range_5cm": [
+      0.0,
+      42.4
+    ],
+    "precipitation_total_mm": 545.7,
+    "integrity_verdict": "PASSED_WITH_PRESERVED_MISSING_VALS"
+  },
+  "train_test_split_audit": {
+    "train_samples": 1760,
+    "test_samples": 440,
+    "split_ratio": "80/20",
+    "class_stratification": "100% Equal Class Proportions in Train (80/class) and Test (20/class)",
+    "scaler_fit_target": "X_train only (Zero Test Leakage)",
+    "is_fitted": true
+  },
+  "overall_status": "PASSED_QUALITY_GATES"
+}

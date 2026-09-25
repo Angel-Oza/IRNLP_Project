@@ -1,0 +1,8 @@
+# Multi-Source Fusion Architecture Comparison (Clean Benchmark)
+
+| Architecture              | Test Accuracy   |   Test Macro-F1 |   Test Macro-Precision |   Test Macro-Recall |   Log-Loss | Mean Sensor Gate (E[g])   | Training Time (s)   |
+|:--------------------------|:----------------|----------------:|-----------------------:|--------------------:|-----------:|:--------------------------|:--------------------|
+| SimpleFusionNet           | 99.77%          |          0.9977 |                 0.9978 |              0.9977 |     0.024  | N/A (Fixed 1.0)           | 8.64s               |
+| GatedFusionNet            | 99.77%          |          0.9977 |                 0.9978 |              0.9977 |     0.0369 | 0.7039                    | 7.25s               |
+| ReliabilityGatedFusionNet | 99.55%          |          0.9954 |                 0.9959 |              0.9955 |     0.0551 | 0.6603                    | 7.27s               |
+| SensorOnlyNet             | 99.09%          |          0.9909 |                 0.9917 |              0.9909 |     0.0495 | N/A (Fixed 1.0)           | 6.54s               |

@@ -1,0 +1,68 @@
+{
+  "Clean (Nominal)": {
+    "corruption_condition": "Clean (Nominal)",
+    "mean_reliability": 0.9109324812889099,
+    "median_reliability": 1.0,
+    "std_reliability": 0.19898051023483276,
+    "min_reliability": 0.23018087446689606,
+    "max_reliability": 1.0,
+    "p25_reliability": 1.0,
+    "p75_reliability": 1.0,
+    "sample_count": 440
+  },
+  "Gaussian Noise 5%": {
+    "corruption_condition": "Gaussian Noise 5%",
+    "mean_reliability": 0.9104244112968445,
+    "median_reliability": 1.0,
+    "std_reliability": 0.19924233853816986,
+    "min_reliability": 0.22955374419689178,
+    "max_reliability": 1.0,
+    "p25_reliability": 0.9999700784683228,
+    "p75_reliability": 1.0,
+    "sample_count": 440
+  },
+  "Gaussian Noise 10%": {
+    "corruption_condition": "Gaussian Noise 10%",
+    "mean_reliability": 0.9093051552772522,
+    "median_reliability": 1.0,
+    "std_reliability": 0.20016296207904816,
+    "min_reliability": 0.2166457623243332,
+    "max_reliability": 1.0,
+    "p25_reliability": 0.9999909996986389,
+    "p75_reliability": 1.0,
+    "sample_count": 440
+  },
+  "Gaussian Noise 20%": {
+    "corruption_condition": "Gaussian Noise 20%",
+    "mean_reliability": 0.9037984609603882,
+    "median_reliability": 1.0,
+    "std_reliability": 0.20350633561611176,
+    "min_reliability": 0.1840023696422577,
+    "max_reliability": 1.0,
+    "p25_reliability": 0.9678452014923096,
+    "p75_reliability": 1.0,
+    "sample_count": 440
+  },
+  "Sensor Drift (1.5\u03c3)": {
+    "corruption_condition": "Sensor Drift (1.5\u03c3)",
+    "mean_reliability": 0.7446241974830627,
+    "median_reliability": 0.9464962482452393,
+    "std_reliability": 0.3062881529331207,
+    "min_reliability": 0.06033319607377052,
+    "max_reliability": 1.0,
+    "p25_reliability": 0.4686506390571594,
+    "p75_reliability": 1.0,
+    "sample_count": 440
+  },
+  "Missing Channels (20%)": {
+    "corruption_condition": "Missing Channels (20%)",
+    "mean_reliability": 0.6677020192146301,
+    "median_reliability": 0.6036816239356995,
+    "std_reliability": 0.21859994530677795,
+    "min_reliability": 0.17365092039108276,
+    "max_reliability": 1.0,
+    "p25_reliability": 0.5215286016464233,
+    "p75_reliability": 0.7935600876808167,
+    "sample_count": 440
+  }
+}

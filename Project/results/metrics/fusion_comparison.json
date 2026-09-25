@@ -1,0 +1,42 @@
+{
+  "SensorOnlyNet": {
+    "model_name": "SensorOnlyNet",
+    "test_accuracy": 0.990909090909091,
+    "macro_precision": 0.9917355371900828,
+    "macro_recall": 0.9909090909090907,
+    "macro_f1": 0.9908863066757803,
+    "log_loss": 0.0495056577884264,
+    "mean_sensor_gate_weight": null,
+    "train_duration_seconds": 6.54
+  },
+  "SimpleFusionNet": {
+    "model_name": "SimpleFusionNet",
+    "test_accuracy": 0.9977272727272727,
+    "macro_precision": 0.9978354978354979,
+    "macro_recall": 0.9977272727272727,
+    "macro_f1": 0.997725851384388,
+    "log_loss": 0.024047217817649954,
+    "mean_sensor_gate_weight": null,
+    "train_duration_seconds": 8.64
+  },
+  "GatedFusionNet": {
+    "model_name": "GatedFusionNet",
+    "test_accuracy": 0.9977272727272727,
+    "macro_precision": 0.9978354978354979,
+    "macro_recall": 0.9977272727272727,
+    "macro_f1": 0.997725851384388,
+    "log_loss": 0.03688131775604877,
+    "mean_sensor_gate_weight": 0.7038507461547852,
+    "train_duration_seconds": 7.25
+  },
+  "ReliabilityGatedFusionNet": {
+    "model_name": "ReliabilityGatedFusionNet",
+    "test_accuracy": 0.9954545454545455,
+    "macro_precision": 0.9958677685950413,
+    "macro_recall": 0.9954545454545454,
+    "macro_f1": 0.9954431533378901,
+    "log_loss": 0.05505752428252998,
+    "mean_sensor_gate_weight": 0.6603164672851562,
+    "train_duration_seconds": 7.27
+  }
+}
